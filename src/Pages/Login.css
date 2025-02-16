@@ -1,0 +1,44 @@
+body{
+    background: #000;
+    color: white;
+    /* text-align: center; */
+    /* margin: 20vh; */
+}
+h1{
+    text-align: center;
+}
+input{
+    color: #000;
+}
+.Loginbody{
+    display: grid ;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-template-areas: '. f .';
+}
+fieldset{
+    grid-area: f;
+    background-image: url(https://img.freepik.com/premium-vector/abstract-shiny-smooth-blur-blue-background-website-banner-paper-card-decorative-design_120819-2042.jpg) !important;
+    background-size: cover;
+    box-shadow: -5px -6px 20px 0px white, -1px 9px 25px 5px white
+}
+@media screen and (max-width:700px){
+    .Loginbody{
+        display: block !important;
+    }
+    fieldset{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:500px){
+    fieldset{
+        width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:900px){
+    /* fieldset{width: 100%;} */
+    .Loginbody{
+        grid-template-columns: 1fr 70vw 1fr;
+    }
+}
