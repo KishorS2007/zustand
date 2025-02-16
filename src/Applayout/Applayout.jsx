@@ -10,9 +10,9 @@ function Applayout(){
     return(
         <HashRouter>
         <Routes>
-            <Route path='/zustand/' element={<Home />}/>
-            <Route path='/zustand/about' element={<About />}/>
-            <Route path='/zustand/Login' element={<Login />}/>
+            <Route path='/' element={<Home />}/>
+            <Route path='/about' element={<About />}/>
+            <Route path='/Login' element={<Login />}/>
             <Route path='*' element={<Error />}/>
         </Routes>
         </HashRouter>
